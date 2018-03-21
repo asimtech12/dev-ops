@@ -1,10 +1,8 @@
 provider "aws" {
-  region                   = "us-east-1"
-  access_key = "xxxxxxxxxx"
-  secret_key = "vvvvvvvvvvvvv"
+  region    = "us-east-1"
 }
 # Create VPC 
-resource "aws_vpc" "vpc_tutorial1" {
+resource "aws_vpc" "TestVPC" {
 	cidr_block = "10.0.0.0/16"
 	enable_dns_support = false
     enable_dns_hostnames = false
